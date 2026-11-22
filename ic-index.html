@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con Bò</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #232336 0%, #0f0f17 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
+        }
+
+        img {
+            display: block;
+            max-width: 75vw;
+            max-height: 75vh;
+            width: auto;
+            height: auto;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+
+        /* Tự động phóng to hơn một chút khi mở trên màn hình điện thoại nhỏ */
+        @media (max-width: 600px) {
+            img {
+                max-width: 90vw;
+                max-height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="frame">
+        <img src="conbo.jpg" alt="conbo">
+    </div>
+
+</body>
+</html>
